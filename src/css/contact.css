@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+body {
+    font-family: 'outfit';
+    background: #79809E;
+    color: #000000;
+}
+
+nav {
+    display: flex;
+    top: 0;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav h1 {
+    color: white;
+}
+
+.active {
+    /* background: #7B7FA0; */
+    padding: 10px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+
+/* .active:hover {
+    background: black;
+    color: white;  
+} */
+
+.contact_container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/OUTIS.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-bottom: 100px; */
+}
+
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.contact-left-title {
+    margin-bottom: 0px;
+}
+
+
+.contact-left-title h2 {
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 5px;
+
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #551A8B;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs {
+    width: 700px;
+    height: 60px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.textarea {
+    width: 700px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 55px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #7D86A1;
+    transition: 0.5s all;
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    /* body {
+        overflow: hidden;
+    } */
+    nav {
+        display: none;
+    }
+    .contact-inputs {
+        width: 200px;
+    }
+  }
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* CSS rules for medium devices */
+    .contact-inputs {
+        width: 500px;
+    }
+    .textarea {
+        width: 500px;
+    }
+  }
+  
+  @media only screen and (min-width: 1025px) {
+    /* CSS rules for large devices */
+  }  
