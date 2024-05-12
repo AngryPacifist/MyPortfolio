@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
 body
 {
@@ -32,7 +31,8 @@ section
 .gradient-overlay1
 {
   opacity: 0.7;
-  background: linear-gradient(to right,#c31432, #240b36);
+  background: linear-gradient(to right,
+  #f45c43, #eb3349);
   height: 100%;
   position: fixed;
   width: 100%;
@@ -176,14 +176,14 @@ h1
 }
 .social{
     position: absolute;
-    display: flex
-    justi
+    display: flex;
 
 }
 
 .socials a {
     align-items: center;
     margin-left: 15px;
+
 }
 
 
@@ -393,8 +393,6 @@ h2.contact.menu-item:before
         left: -190px;
         top: 10px;
     }
-
-
     .about-block {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
@@ -487,7 +485,6 @@ h2.contact.menu-item:before
         left: 382px;
         top: -150px;
     }
-
     .portfolio-block {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
@@ -532,7 +529,6 @@ h2.contact.menu-item:before
         left: -190px;
         top: 10px;
     }
-
     .about-block {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
@@ -749,33 +745,6 @@ h2.contact.menu-item:before
         display: none;
     }
     
-}
-
-@media (max-width: 767px) {
-    .socials {
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        /* bottom: 20px; */
-        margin-bottom: 20px;
-    }
-}
-
-/* Position social icons under "Hi, I'm Outis" on larger screens */
-@media (min-width: 768px) {
-    .name-block-container {
-        position: relative;
-    }
-
-    .socials {
-        position: absolute;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-    }
 }
 
 
