@@ -1,54 +1,99 @@
 * {
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
     text-decoration: none;
-    
+    box-sizing: border-box;
+    font-family: 'outfit';
+    list-style: none;
 }
 
 body {
     font-family: 'outfit';
     background: #79809E;
     color: #000000;
-}
-
-nav {
     display: flex;
-    top: 0;
-    gap: 25px;
-    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
     align-items: center;
-    height: 90px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-nav h1 {
-    color: white;
-}
-
-.active {
-    /* background: #7B7FA0; */
-    padding: 10px;
-    border-radius: 20px;
-    border-style: solid;
-    border-width: 2px;
+    justify-content: center;
 }
 
 
-/* .active:hover {
-    background: black;
-    color: white;  
-} */
+header {
+    top: 0;
+    position: fixed;
+    background: #ffffff;
+    color: #000000;
+    width: 50%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 10px 10px;
+    padding: 0 50px;
+    z-index: 1000;
+}
+header .logo {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+hr {
+    background: white;
+}
+
+header nav ul {
+    display: flex;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+
+}
+header nav ul li a {
+    display: inline-block;
+    color: #000000;
+    padding: 5px 0;
+    margin: 0 10px;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+    border-bottom-color: #000000;
+}
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #393B48;
+}
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    header {
+        width: 300px;
+        font-size: 10px;
+    }
+    header nav ul {
+        font-size: 17px;
+    }
+}
 
 .contact_container {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../images/OUTIS.png);
     background-repeat: no-repeat;
     background-size: cover;
-    /* margin-bottom: 100px; */
+    margin-bottom: 20-x;
 }
 
 
@@ -78,7 +123,7 @@ nav h1 {
     border: none;
     width: 120px;
     height: 5px;
-    background-color: #551A8B;
+    background-color: #000000;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -106,10 +151,12 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 55px;
-    border-radius: 10px;
+    border-radius: 50px;
     font-weight: 400;
     font-size: 30px;
+    border-style: none;
+    width: 44rem;
+    height: 60px;
 }
 
 button:hover {
@@ -120,27 +167,48 @@ button:hover {
 }
 
 @media only screen and (max-width: 600px) {
-    /* body {
-        overflow: hidden;
-    } */
-    nav {
-        display: none;
+    body {
+        background: url(../images/OUTIS.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     .contact-inputs {
-        width: 200px;
+        width: 400px;
+        height: 50px;
+    }
+
+    .textarea {
+        width: 400px;
+        height: 200px;
+    }
+
+    button {
+        width: 400px;
+        height: 50px;
+    }
+
+    .contact_container {
+        margin-bottom: 10px;
     }
   }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    /* CSS rules for medium devices */
     .contact-inputs {
         width: 500px;
     }
     .textarea {
         width: 500px;
     }
+    button {
+        width: 31rem;
+    }
+    
   }
   
   @media only screen and (min-width: 1025px) {
-    /* CSS rules for large devices */
-  }  
+  } 
+  
+  a {
+    color: #000000;
+  }

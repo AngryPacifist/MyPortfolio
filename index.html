@@ -3,10 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OUTIS</title>
+    <title>Outis</title>
+    <!----------Font Awesome CDN--------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    
+    
+    <!----------CSS Plugins--------->
+    <link rel="stylesheet" href="css/plugins.min.css">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+
 </head>
-<body>
-    <h1>OUTIS' PORTFOLIO</h1>
-    <p>This is an organisation</p>
+<body>  
+    <section class="home" style="background:url(./src/images/OUTIS.png) #333 40% 40%; background-repeat: no-repeat; background-size: cover;">
+        <div class="gradient-overlay1 opacity7"></div>
+
+        <div class="container">
+            <div class="name-block">
+                <div class="name-block-container">
+                    <h1><span>Hi, I'm
+                        <div style="display: flex; height: 5px;"></div>
+                    </span>OUTIS</h1>
+                    <h2>Community Manager, Writer</h2>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div> 
+            <div class="menu-blocks">
+                <div class="about-block menu-block">
+                    <div class="about-block-container">
+                        <h2 class="about menu-item">Resume</h2>
+                    </div>
+                </div>
+
+                <a href="./src/portfolio.html">
+                    <div class="portfolio-block menu-block">
+                        <div class="portfolio-block-container">
+                            <h2 class="portfolio menu-item">Portfolio</h2>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="blog-block menu-block"></div>
+
+                <a href="./src/contact.html">
+                    <div class="contact-block menu-block">
+                        <div class="contact-block-container">
+                            <h2 class="contact menu-item">Contact</h2>
+                        </div>
+                    </div>
+                </a>
+            </div> 
+        </div>
+
+        <!-- Social Icons -->
+        <div class="socials" style="margin-top: 20px; text-align: center; cursor: pointer;">
+            <a href="#"><i class="fa-brands fa-x-twitter fa-2xl" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-brands fa-discord fa-2xl" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-regular fa-envelope fa-2xl" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i></a>
+        </div>
+
+    </section>
+
+    <script src="https://kit.fontawesome.com/2056f504e5.js" crossorigin="anonymous"></script>
 </body>
 </html>

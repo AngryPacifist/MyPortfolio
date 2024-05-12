@@ -3,9 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outis</title>
+    <title>Outis Portfolio</title>
+
+    <link rel="stylesheet" href="./css/portfolio.css">
 </head>
 <body>
-    <H1>This page is under construction</H1>
+
+    <header>
+        <!-- <div class="logo">OUTIS</div> -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html" >Home</a>
+                </li>
+                <li>
+                    <a href="portfolio.html" class="active">Portfolio</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+
+    <div class="card-container">
+
+        <!-- Card one -->
+        <a href="../src/portfolio(communitymgt)/index.html">
+            <div class="card">
+                <img src="images/community-management.jpg" alt="">
+                <div class="card-content">
+                    <h1>Community Management</h1>
+                </div>
+            </div>
+        </a>
+
+        <!-- Card two -->
+        <a href="../src/portfolio(writer)/index.html">
+            <div class="card">
+                <img src="images/writer.jpg" alt="">
+                <div class="card-content">
+                    <h1>Writing</h1>
+                </div>
+            </div>
+        </a>
+
+        <!-- Card three -->
+        <a href="">
+            <div class="card">
+                <img src="images/dev.jpg" alt="">
+                <div class="card-content">
+                    <h1>Development</h1>
+                </div>
+            </div>
+        </a>
+    </div>
 </body>
 </html>
